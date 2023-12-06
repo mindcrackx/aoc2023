@@ -14,7 +14,14 @@ func TestSix_1(t *testing.T) {
 		name   string
 		input  string
 		expect string
-	}{}
+	}{
+		{
+			name: "example_1",
+			input: `Time:      7  15   30
+Distance:  9  40  200`,
+			expect: "288",
+		},
+	}
 
 	for _, tt := range tests {
 		tt := tt
@@ -40,7 +47,14 @@ func TestSix_2(t *testing.T) {
 		name   string
 		input  string
 		expect string
-	}{}
+	}{
+		{
+			name: "example_1",
+			input: `Time:      7  15   30
+Distance:  9  40  200`,
+			expect: "71503",
+		},
+	}
 
 	for _, tt := range tests {
 		tt := tt
